@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/text_view_restaurant_name"
-        android:layout_centerHorizontal="true"
-        android:text="Hungry Hungry Devs"/>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Starters"
-        android:layout_below="@id/text_view_restaurant_name"/>
+        android:textSize="24sp"
+        android:text="Hungry Hungry Devs" />
 
+    <TextView
+        android:id="@+id/text_view_starters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/text_view_restaurant_name"
+        android:layout_centerHorizontal="true"
+        android:text="Starters" />
 
+    <TextView
+        android:id="@+id/text_main_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/text_view_starters"
+        android:layout_centerHorizontal="true"
+        android:text="Main Courses" />
 
 
 </RelativeLayout>
